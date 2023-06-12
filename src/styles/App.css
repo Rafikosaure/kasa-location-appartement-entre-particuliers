@@ -1,0 +1,10 @@
+.init-project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: blueviolet;
+    background-color: aquamarine;
+    padding: 20px;
+}
