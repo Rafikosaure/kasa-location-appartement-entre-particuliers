@@ -1,12 +1,15 @@
-import { useParams } from "react-router-dom"
+import { useParams, Navigate } from "react-router-dom"
+import datas from '../datas/logements.json'
 
 function Apartment() {
   const { apartmentNumber } = useParams()
-  return (
-    <div>
-      <h1>Appartement {apartmentNumber}</h1>
-    </div>
-  )
+  if (parseInt(apartmentNumber) >= 1 && parseInt(apartmentNumber) <= datas.length) {
+    return (
+    <div><h1>Appartement {apartmentNumber}</h1></div>
+    )
+  } else {
+    return <Navigate replace to="*" />
+  }
 }
 
 export default Apartment
