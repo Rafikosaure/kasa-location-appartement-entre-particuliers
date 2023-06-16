@@ -12,15 +12,19 @@
     flex-direction: column;
     width: 1240px;
     height: 1095px;
+    // height: fit-content;
     margin-right: auto;
     margin-left: auto;
 }
 
 .cards-container {
-    width: 1240px;
+    max-width: 1240px;
     height: 829px;
     margin-top: 43px;
     margin-bottom: 50px;
     background: #F7F7F7;
     border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
