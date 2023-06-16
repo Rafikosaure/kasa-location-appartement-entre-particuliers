@@ -1,6 +1,10 @@
+import Landscape from "../components/Landscape";
+
 function AboutUs() {
     return (
-      <div>A propos...</div>
+      <div>
+        <Landscape />
+      </div>
     );
   }
   

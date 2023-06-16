@@ -1,0 +1,40 @@
+.banner-wrapper {
+    max-width: 1440px;
+    background-color: white;
+}
+
+.kasa-banner {
+    width: 1240px;
+    height: 68px;
+    margin-right: auto;
+    margin-left: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+    padding-top: 45px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+
+.kasa-nav {
+	display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: 34px;
+    padding: 0px;
+    gap: 57px;
+}
+
+.kasa-link {
+    color: #FF6060;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: right;
+    text-decoration: none;
+}
+
+.kasa-logo {
+	height: 68px;
+	width: auto;
+}
