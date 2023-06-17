@@ -12,7 +12,7 @@ function Home() {
             <Landscape />
             <div>
               <CardsList />
-              {/* <Link to='apartment/1'>Appartement</Link> */}
+              <Link to='apartment/1'>Appartement</Link>
             </div>
         </div>
       </div>

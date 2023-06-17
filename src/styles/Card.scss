@@ -1,4 +1,4 @@
-.card{
+.card {
     width: 340px;
     height: 340px;
     margin-top: 45px;
@@ -8,19 +8,20 @@
 .card-image {
     width: 340px;
     height: 340px;
-    background-color: #FF6060;
+    background-color: transparent;
     border-radius: 10px;
+    background-color: #FF6060;
 }
 
 .card-title {
-    position: relative;
-    bottom: 95px;
-    left: 20px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    color: #FFFFFF;
-    width: 300px;
+    color: white;
+    width: 250px;
     height: fit-content;
+    position: relative;
+    bottom: 90px;
+    left: 18px;
 }
