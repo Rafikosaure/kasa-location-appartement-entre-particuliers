@@ -1,0 +1,19 @@
+.aboutus-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.aboutus-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1240px;
+    height: 952px;
+    // height: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+}

@@ -1,10 +1,14 @@
+import '../styles/AboutUs.scss'
 import Landscape from "../components/Landscape";
 
 function AboutUs() {
     return (
-      <div>
-        <Landscape />
+      <div className='aboutus-page'>
+        <div className='aboutus-body'>
+          <Landscape />
+        </div>
       </div>
+      
     );
   }
   
