@@ -1,40 +1,43 @@
-.banner-wrapper {
-    max-width: 1440px;
-    background-color: white;
+$color_1: #FF6060;
+$background-color_1: white;
+
+.banner__wrapper {
+	max-width: 1440px;
+	background-color: $background-color_1;
+    .banner {
+        width: 1240px;
+        height: 68px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 45px;
+        padding-bottom: 50px;
+        background-color: $background-color_1;
+        .banner__logo {
+            height: 68px;
+            width: auto;
+        }
+        .banner__navigation {
+            display: flex;
+            flex-direction: row;
+            width: fit-content;
+            height: 34px;
+            padding: 0px;
+            gap: 57px;
+            .banner__navlinks {
+                color: $color_1;
+                font-size: 24px;
+                font-weight: 500;
+                text-align: right;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
-.kasa-banner {
-    width: 1240px;
-    height: 68px;
-    margin-right: auto;
-    margin-left: auto;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
-	align-items: center;
-    padding-top: 45px;
-    padding-bottom: 50px;
-    background-color: white;
-}
 
-.kasa-nav {
-	display: flex;
-    flex-direction: row;
-    width: fit-content;
-    height: 34px;
-    padding: 0px;
-    gap: 57px;
-}
 
-.kasa-link {
-    color: #FF6060;
-    font-size: 24px;
-    font-weight: 500;
-    text-align: right;
-    text-decoration: none;
-}
 
-.kasa-logo {
-	height: 68px;
-	width: auto;
-}
