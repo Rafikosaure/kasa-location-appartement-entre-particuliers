@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import '../styles/Home.scss'
 import Landscape from "../components/Landscape";
-import Card from "../components/Card";
+import CardsList from "../components/CardsList";
+
 
 
 function Home() {
@@ -9,13 +10,8 @@ function Home() {
       <div className='home-page'>
         <div className='home-body'>
             <Landscape />
-            <div className="cards-container">
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
+            <div>
+              <CardsList />
               {/* <Link to='apartment/1'>Appartement</Link> */}
             </div>
         </div>

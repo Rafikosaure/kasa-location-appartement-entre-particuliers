@@ -5,7 +5,7 @@ function Card() {
     return (
       <div className='card'>
         <img className='card-image' src={CardImage} alt="Une carte"/>
-        <p className='card-title'>Titre de la <br/>location</p>
+        <p className='card-title'>Titre de la location</p>
       </div>
     );
   }
