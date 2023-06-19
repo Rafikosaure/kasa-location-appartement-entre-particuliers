@@ -1,18 +1,19 @@
-.home-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: white;
-}
+$background-color_1: white;
 
-.home-body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 1240px;
-    // height: 1095px;
-    height: fit-content;
-    margin-right: auto;
-    margin-left: auto;
+.home {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: $background-color_1;
+    .home__body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 1240px;
+        // height: 1095px;
+        height: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }

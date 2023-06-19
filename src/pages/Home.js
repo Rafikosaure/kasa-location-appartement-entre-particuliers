@@ -7,8 +7,8 @@ import CardsList from "../components/CardsList";
 
 function Home() {
     return (
-      <div className='home-page'>
-        <div className='home-body'>
+      <div className='home'>
+        <div className='home__body'>
             <Landscape />
             <div>
               <CardsList />
