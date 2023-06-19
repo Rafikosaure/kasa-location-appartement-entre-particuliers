@@ -6,12 +6,12 @@ function Card({ apartmentDatas, index }) {
     document.location.href=`/apartment/${index}`
     console.log(index, apartmentDatas.title)
   }
-    return (
-      <div className='card' onClick={toApartmentPage}>
-        <img className='card__image' src={CardImage} alt="Une carte" />
-        <p className='card__title'>{ apartmentDatas.title }</p>
-      </div>
-    );
+  return (
+    <div className='card' onClick={toApartmentPage}>
+      <img className='card__image' src={CardImage} alt="Une carte" />
+      <p className='card__title'>{ apartmentDatas.title }</p>
+    </div>
+  );
   }
   
   export default Card;
