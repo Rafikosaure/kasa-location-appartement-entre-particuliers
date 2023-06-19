@@ -1,32 +1,32 @@
+$color_1: white;
+$background-color_1: black;
+
 .landscape {
-    width: auto;
-    height: 223px;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    border-radius: 25px;
-}
-
-.landscape-overlay {
-    background-color: black;
-    mix-blend-mode: darken;
-}
-
-.landscape-image {
-    opacity: 0.7;
-}
-
-.landscape-legend {
-    display: flex;
-    align-items: flex-end;
-    color: white;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 142.6%;
-    position: absolute;
+	width: auto;
+	height: 223px;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	border-radius: 25px;
+    .landscape__overlay {
+        background-color: $background-color_1;
+        mix-blend-mode: darken;
+        .landscape__image {
+            opacity: 0.7;
+        }
+    }
+    .landscape__legend {
+        display: flex;
+        align-items: flex-end;
+        color: $color_1;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 142.6%;
+        position: absolute;
+    }
 }

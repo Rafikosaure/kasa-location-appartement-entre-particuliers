@@ -11,10 +11,10 @@ function Landscape() {
     }
     return (
         <div className='landscape'>
-            <div className='landscape-overlay'>
-                <img className='landscape-image' src={landscapeImage} alt='Littoral rocheux secoué par les vagues'/>
+            <div className='landscape__overlay'>
+                <img className='landscape__image' src={landscapeImage} alt='Littoral rocheux secoué par les vagues'/>
             </div>
-            <p className='landscape-legend'>{imageLegend}</p>
+            <p className='landscape__legend'>{imageLegend}</p>
         </div>
     )
 }
