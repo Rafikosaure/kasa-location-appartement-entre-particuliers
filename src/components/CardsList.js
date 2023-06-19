@@ -4,10 +4,11 @@ import Card from './Card'
 
 
 function CardsList() {
+    
     return (
         <div className='cardslist'>
-            {datas.map((apartment, index) => (
-                <Card key={`${apartment}-${index}`} apartment={apartment} />
+            {datas.map((apartmentDatas, index) => (
+                <Card key={`${apartmentDatas}-${index}`} apartmentDatas={apartmentDatas} index={index} />
             ))}
         </div>
     )

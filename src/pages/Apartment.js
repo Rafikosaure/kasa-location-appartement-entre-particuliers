@@ -3,7 +3,7 @@ import datas from '../datas/logements.json'
 
 function Apartment() {
   const { apartmentNumber } = useParams()
-  if (parseInt(apartmentNumber) >= 1 && parseInt(apartmentNumber) <= datas.length) {
+  if (parseInt(apartmentNumber) >= 0 && parseInt(apartmentNumber) <= datas.length) {
     return (
     <div><h1>Appartement {apartmentNumber}</h1></div>
     )
