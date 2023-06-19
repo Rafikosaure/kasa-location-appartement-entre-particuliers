@@ -1,0 +1,54 @@
+.collapse {
+    background-color: #F6F6F6;
+    color: #FF6060;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.collapse__bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 15px;
+    margin-top: 30px;
+    width: 1015px;
+    height: 32px;
+    background: #FF6060;
+    border-radius: 5px;
+}
+
+.collapse__button {
+    display: flex;
+    width: 24px;
+    height: 14px;
+    border: none;
+}
+
+.collapse__button--close {
+    background: url(../assets/arrow_down.png);
+}
+
+.collapse__button--open {
+    background: url(../assets/arrow_up.png);
+}
+
+.collapse__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+}
+
+.collapse__description {
+    width: 1015px;
+    height: fit-content;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 18px;
+    font-weight: lighter;
+}

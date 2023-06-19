@@ -1,19 +1,24 @@
 .aboutus-page {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     background-color: white;
+    max-width: 1440px;
+    height: fit-content;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .aboutus-body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 1240px;
-    height: 952px;
-    // height: fit-content;
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%;
     background-color: white;
+}
+
+.aboutus__collapses {
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 35px;
 }

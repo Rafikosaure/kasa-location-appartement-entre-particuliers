@@ -12,6 +12,6 @@ function Card({ apartmentDatas, index }) {
       <p className='card__title'>{ apartmentDatas.title }</p>
     </div>
   );
-  }
+}
   
-  export default Card;
+export default Card;
