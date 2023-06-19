@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import '../styles/Banner.scss'
 import logo from '../assets/logo.png'
 
-function Banner() {    
+function Banner() {
     function UnderlineHomeLink() {
         const underlinedHomeLink = document.querySelector('.banner__navlink--home')
         const underlinedAboutUsLink = document.querySelector('.banner__navlink--aboutus')
