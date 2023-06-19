@@ -6,8 +6,8 @@ import Card from './Card'
 function CardsList() {
     return (
         <div className='cards-list'>
-            {datas.map((card, index) => (
-                <Card key={`${card}-${index}`} apartmentTitle={card.title} />
+            {datas.map((apartment, index) => (
+                <Card key={`${apartment}-${index}`} apartment={apartment} />
             ))}
         </div>
     )

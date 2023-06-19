@@ -1,11 +1,11 @@
 import '../styles/Card.scss'
 import CardImage from '../assets/RectangleCard.png'
 
-function Card({ apartmentTitle }) {
+function Card({ apartment }) {
     return (
       <div className='card'>
         <img className='card-image' src={CardImage} alt="Une carte" />
-        <p className='card-title'>{ apartmentTitle }</p>
+        <p className='card-title'>{ apartment.title }</p>
       </div>
     );
   }
