@@ -1,27 +1,28 @@
+$color_1: white;
+$font-family_1: 'Montserrat';
+$background-color_1: #FF6060;
+
 .card {
-    width: 340px;
-    height: 340px;
-    margin-top: 45px;
-    cursor: pointer;
-}
-
-.card-image {
-    width: 340px;
-    height: 340px;
-    background-color: transparent;
-    border-radius: 10px;
-    background-color: #FF6060;
-}
-
-.card-title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    color: white;
-    width: 250px;
-    height: fit-content;
-    position: relative;
-    bottom: 90px;
-    left: 18px;
+	width: 340px;
+	height: 340px;
+	margin-top: 45px;
+	cursor: pointer;
+    .card__image {
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+        background-color: $background-color_1;
+    }
+    .card__title {
+        font-family: $font-family_1;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: $color_1;
+        width: 250px;
+        height: fit-content;
+        position: relative;
+        bottom: 90px;
+        left: 18px;
+    }
 }

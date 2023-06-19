@@ -4,8 +4,8 @@ import CardImage from '../assets/RectangleCard.png'
 function Card({ apartment }) {
     return (
       <div className='card'>
-        <img className='card-image' src={CardImage} alt="Une carte" />
-        <p className='card-title'>{ apartment.title }</p>
+        <img className='card__image' src={CardImage} alt="Une carte" />
+        <p className='card__title'>{ apartment.title }</p>
       </div>
     );
   }
