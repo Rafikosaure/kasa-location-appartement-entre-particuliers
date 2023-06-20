@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
-import '../styles/Banner.scss'
+import '../styles/Header.scss'
 import logo from '../assets/logo.png'
 
-function Banner() {
+function Header() {
     function UnderlineHomeLink() {
         const underlinedHomeLink = document.querySelector('.banner__navlink--home')
         const underlinedAboutUsLink = document.querySelector('.banner__navlink--aboutus')
@@ -33,7 +33,7 @@ function Banner() {
     }
 
     return (
-        <div className='banner__wrapper' onLoad={LoadPagesLinks}>
+        <div className='header' onLoad={LoadPagesLinks}>
             <div className='banner'>
                 <img src={logo} alt='Logo de Kasa' className='banner__logo' />
                 <nav className='banner__navigation'>
@@ -45,4 +45,4 @@ function Banner() {
     )
 }
 
-export default Banner
+export default Header

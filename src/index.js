@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './styles/index.scss';
 import Footer from './components/Footer';
-import Banner from './components/Banner';
+import Header from './components/Header';
 import AboutUs from './pages/AboutUs';
 import Apartment from './pages/Apartment';
 import Error from './pages/Error';
@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-        <Banner />
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/apartment/:apartmentNumber" element={<Apartment />} />

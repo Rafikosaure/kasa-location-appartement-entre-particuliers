@@ -1,7 +1,7 @@
 import '../styles/Error.scss'
 import Error404 from '../assets/404.png'
 import { Link } from 'react-router-dom'
-import underlinedHomeLink from '../components/Banner'
+import underlinedHomeLink from '../components/Header'
 
 function Error() {
     function RedirectionLink() {
