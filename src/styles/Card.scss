@@ -1,6 +1,5 @@
 $color_1: white;
 $font-family_1: 'Montserrat';
-$background-color_1: #FF6060;
 
 .card {
 	width: 340px;
@@ -12,9 +11,13 @@ $background-color_1: #FF6060;
         width: 340px;
         height: 340px;
         border-radius: 10px;
-        background-color: $background-color_1;
+        object-fit: cover;
+    }
+    .card__overlay {
+        position: absolute;
     }
     .card__title {
+        position: relative;
         font-family: $font-family_1;
         font-style: normal;
         font-weight: 500;
@@ -22,7 +25,6 @@ $background-color_1: #FF6060;
         color: $color_1;
         width: 250px;
         height: fit-content;
-        position: relative;
         bottom: 90px;
         left: 18px;
     }

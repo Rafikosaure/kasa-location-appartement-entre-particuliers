@@ -1,15 +1,16 @@
-import { useParams, Navigate } from "react-router-dom"
-import datas from '../datas/logements.json'
+import { useParams } from "react-router-dom"
+import '../styles/Apartment.scss'
 
 function Apartment() {
-  const { apartmentNumber } = useParams()
-  if (parseInt(apartmentNumber) >= 0 && parseInt(apartmentNumber) <= datas.length) {
-    return (
-    <div><h1>Appartement {apartmentNumber}</h1></div>
-    )
-  } else {
-    return <Navigate replace to="*" />
-  }
+  const { apartmentId } = useParams()
+  return (
+    <div className='apartment'>
+      <div><h1>Identifiant de l'appartement: "{apartmentId}"</h1></div>
+    </div>
+  )
+  // } else {
+  //   return <Navigate replace to="*" />
+  // }
 }
 
 

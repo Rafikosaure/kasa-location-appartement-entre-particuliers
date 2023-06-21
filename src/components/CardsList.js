@@ -7,8 +7,8 @@ function CardsList() {
     
     return (
         <div className='cardslist'>
-            {datas.map((apartmentDatas, index) => (
-                <Card key={`${apartmentDatas}-${index}`} apartmentDatas={apartmentDatas} index={index} />
+            {datas.map(apartment => (
+                <Card key={`${apartment.id}`} apartment={apartment} />
             ))}
         </div>
     )

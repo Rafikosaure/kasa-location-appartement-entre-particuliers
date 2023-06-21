@@ -27,12 +27,15 @@ $background-color_1: white;
             height: 34px;
             padding: 0px;
             gap: 57px;
-            .banner__navlinks {
+            .banner__navlink {
                 color: $color_1;
                 font-size: 24px;
                 font-weight: 500;
                 text-align: right;
                 text-decoration: none;
+            }
+            .banner__navlink:hover {
+                text-decoration: underline;
             }
         }
     }
