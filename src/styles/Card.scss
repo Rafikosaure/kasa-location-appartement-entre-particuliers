@@ -6,7 +6,9 @@ $font-family_1: 'Montserrat';
 	height: 340px;
 	margin-top: 45px;
     border-radius: 10px;
-	cursor: pointer;
+    .card__link {
+        text-decoration: none;
+    }
     .card__image {
         width: 340px;
         height: 340px;
