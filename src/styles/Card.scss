@@ -1,18 +1,20 @@
 $color_1: white;
 $font-family_1: 'Montserrat';
+@mixin card-properties {
+    width: 340px;
+	height: 340px;
+    border-radius: 10px;
+}
+
 
 .card {
-	width: 340px;
-	height: 340px;
+    @include card-properties;
 	margin-top: 45px;
-    border-radius: 10px;
     .card__link {
         text-decoration: none;
     }
     .card__image {
-        width: 340px;
-        height: 340px;
-        border-radius: 10px;
+        @include card-properties;
         object-fit: cover;
     }
     .card__overlay {
