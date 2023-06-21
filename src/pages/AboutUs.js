@@ -5,8 +5,8 @@ import PrinciplesDatas from '../datas/valeurs.json'
 
 function AboutUs() {
     return (
-      <div className='aboutus-page'>
-        <div className='aboutus-body'>
+      <div className='aboutus'>
+        <div className='aboutus__body'>
           <Landscape />
         </div>
         <div className='aboutus__collapses'>

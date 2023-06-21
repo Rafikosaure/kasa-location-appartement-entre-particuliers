@@ -1,5 +1,9 @@
 .apartment {
-    width: auto;
-    height: 400px;
+    max-width: 1440px;
+    height: 760px;
     background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
