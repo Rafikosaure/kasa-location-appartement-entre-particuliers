@@ -21,15 +21,36 @@
 }
 
 .slideshow__button {
-    width: 80px;
-    height: 70px;
+    width: 47px;
+    height: 79px;
     position: absolute;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
 }
 
 .slideshow__button--prev {
     left: 0%;
+    background: url("../assets/arrow_left.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .slideshow__button--next {
     right: 0%;
+    background: url("../assets/arrow_right.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.counter {
+    position: absolute;
+    bottom: 0%;
+    width: 20%;
+    left: 40%;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 500;
 }
