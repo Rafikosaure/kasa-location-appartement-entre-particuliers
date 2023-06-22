@@ -1,0 +1,14 @@
+.tagname {
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    background: #FF6060;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tagname__text {
+    font-size: 12px;
+    color: white;
+}
