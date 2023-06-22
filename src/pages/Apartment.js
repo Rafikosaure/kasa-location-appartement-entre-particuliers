@@ -6,8 +6,7 @@ import datas from '../datas/logements.json'
 function Apartment() {
   const { apartmentId } = useParams()
   return (
-    <div className='apartment'>
-      <h1>Bienvenue sur la page des appartements !</h1>  
+    <div className='apartment'> 
       <Slideshow currentDatas = {datas.find(apartment => apartment.id === apartmentId)} />
     </div>
   )

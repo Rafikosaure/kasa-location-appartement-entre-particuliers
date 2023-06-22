@@ -26,10 +26,10 @@ function Slideshow({ currentDatas }) {
         <div className="slideshow">
             {oneOnly ? (
                 <div className='slideshow__switchcontent' onLoad={SwitchContent}>
-                    <button className='slideshow__button slideshow__button--prev' onClick={() => {letCurrentImage(currentImage - 1); PrevImage()}} />
+                    <button className='slideshow__buttons slideshow__buttonPrev' onClick={() => {letCurrentImage(currentImage - 1); PrevImage()}} />
                     <img className='slideshow__currentImage' src={images[currentImage]} alt='Photos du logement courant du caroussel' />
-                    <button className='slideshow__button slideshow__button--next' onClick={() => {letCurrentImage(currentImage + 1); NextImage()}} />
-                    <p className='counter'>{`${currentImage + 1}/${images.length}`}</p>
+                    <button className='slideshow__buttons slideshow__buttonNext' onClick={() => {letCurrentImage(currentImage + 1); NextImage()}} />
+                    <p className='slideshow__counter'>{`${currentImage + 1}/${images.length}`}</p>
                 </div>
             ) : (
                 <div className='slideshow__switchcontent' onLoad={SwitchContent}>
