@@ -13,15 +13,15 @@ function Collapse({ title, description }) {
   const [styleCollapseBar, setStyleCollapseBar] = useState('collapse__bar--apartPage')
   const [styleCollapseDescription, setStyleCollapseDescription] = useState('collapse__description--apartPage')
   
-  const notAboutusPage = window.location.pathname !== '/aboutus'
+  const aboutusPage = window.location.pathname === '/aboutus'
 
   // Gestion des styles du composant selon la page
   useEffect(()=>{
-    if(!notAboutusPage) {
+    if(aboutusPage) {
       setStyleCollapseBar('')
       setStyleCollapseDescription('')
     }
-  }, [notAboutusPage])
+  }, [aboutusPage])
 
   // Détecter si le contenu de la description est une liste
   useEffect(()=>{
