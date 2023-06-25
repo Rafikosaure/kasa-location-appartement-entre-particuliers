@@ -3,12 +3,19 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 
 function Collapse({ title, description }) {
+   // Composant ouvert ou non ?
   const [isOpen, setIsOpen] = useState(false)
+
+   // La description: liste ou chaîne de caractères ?
   const [isAnArray, setIsAnArray] = useState(false)
+  
+  // Classes CSS en fonction de la page courante
   const [styleCollapseBar, setStyleCollapseBar] = useState('collapse__bar--apartPage')
   const [styleCollapseDescription, setStyleCollapseDescription] = useState('collapse__description--apartPage')
+  
   const notAboutusPage = window.location.pathname !== '/aboutus'
 
+  // Gestion des styles du composant selon la page
   useEffect(()=>{
     if(!notAboutusPage) {
       setStyleCollapseBar('')
@@ -16,16 +23,16 @@ function Collapse({ title, description }) {
     }
   }, [notAboutusPage])
 
+  // Détecter si le contenu de la description est une liste
   useEffect(()=>{
     if(typeof description === 'object' && description.hasOwnProperty('length')) {
-      // console.log("La description est une liste d'items.")
       setIsAnArray(true)
     }
   }, [description])
 
   return (
     <div>
-        <div>
+      <div>
         {isOpen ? (
           <div className='collapse' onClick={() => setIsOpen(false)}>
             <div className={`collapse__bar ${styleCollapseBar}`}>
@@ -50,7 +57,6 @@ function Collapse({ title, description }) {
         )}
       </div>
     </div>
-      
   )
 }
     
