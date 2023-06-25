@@ -1,11 +1,15 @@
-.collapse {
-    background-color: #F6F6F6;
-    color: #FF6060;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    height: 100%;
-}
+$color_1: #FF6060;
+$color_2: white;
+$font-family_1: 'Montserrat';
+$background-color_1: #F6F6F6;
 
+.collapse {
+	background-color: $background-color_1;
+	color: $color_1;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	height: 100%;
+}
 .collapse__bar {
     display: flex;
     flex-direction: row;
@@ -17,51 +21,44 @@
     height: 32px;
     background: #FF6060;
     border-radius: 5px;
+    .collapse__button {
+        display: flex;
+        width: 24px;
+        height: 14px;
+        border: none;
+    }
+    .collapse__button--close {
+        background: url(../assets/arrow_down.png);
+    }
+    .collapse__button--open {
+        background: url(../assets/arrow_up.png);
+    }
+    .collapse__title {
+        font-family: $font-family_1;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        color: $color_2;
+    }
 }
-
 .collapse__bar--apartPage {
     width: 550px;
 }
-
-.collapse__button {
-    display: flex;
-    width: 24px;
-    height: 14px;
-    border: none;
-}
-
-.collapse__button--close {
-    background: url(../assets/arrow_down.png);
-}
-
-.collapse__button--open {
-    background: url(../assets/arrow_up.png);
-}
-
-.collapse__title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    color: white;
-}
-
 .collapse__description {
     width: 1015px;
     height: fit-content;
     padding-left: 2%;
     padding-right: 2%;
     padding-bottom: 2%;
-    font-family: 'Montserrat';
+    font-family: $font-family_1;
     font-style: normal;
     font-size: 18px;
     font-weight: lighter;
-    line-height: 142.6%; 
+    line-height: 142.6%;
 }
-
 .collapse__description--apartPage {
     width: 550px;
-    min-height: 178px;
+    min-height: 150px;
     max-height: fit-content;
     padding-left: 4%;
     padding-right: 4%;
@@ -69,3 +66,9 @@
     padding-bottom: 5%;
     list-style-type: none;
 }
+
+
+
+
+
+
