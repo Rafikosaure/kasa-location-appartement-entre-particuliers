@@ -4,7 +4,6 @@ import { useState } from 'react';
 function Slideshow({ currentDatas }) {
     const images = currentDatas.pictures
     let [currentImage, letCurrentImage] = useState(0)
-    let [oneOnly, setOneOnly] = useState(true)
 
     function PrevImage() {
         if (currentImage <= 0) {
@@ -16,23 +15,18 @@ function Slideshow({ currentDatas }) {
             letCurrentImage(currentImage = 0)
         }
     }
-    function SwitchContent() {
-        if (images.length === 1) {
-            setOneOnly(oneOnly = false)
-        }
-    }
 
     return (
         <div className="slideshow">
-            {oneOnly ? (
-                <div className='slideshow__switchcontent' onLoad={SwitchContent}>
+            {images.length > 1 ? (
+                <div className='slideshow__switchcontent'>
                     <button className='slideshow__buttons slideshow__buttonPrev' onClick={() => {letCurrentImage(currentImage - 1); PrevImage()}} />
                     <img className='slideshow__currentImage' src={images[currentImage]} alt='Photos du logement courant du caroussel' />
                     <button className='slideshow__buttons slideshow__buttonNext' onClick={() => {letCurrentImage(currentImage + 1); NextImage()}} />
                     <p className='slideshow__counter'>{`${currentImage + 1}/${images.length}`}</p>
                 </div>
             ) : (
-                <div className='slideshow__switchcontent' onLoad={SwitchContent}>
+                <div className='slideshow__switchcontent'>
                     <img className='slideshow__currentImage' src={images[currentImage]} alt='Photos du logement courant du caroussel' />
                 </div>
             )}

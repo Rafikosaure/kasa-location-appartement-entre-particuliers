@@ -3,6 +3,7 @@
     color: #FF6060;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    height: 100%;
 }
 
 .collapse__bar {
@@ -16,6 +17,10 @@
     height: 32px;
     background: #FF6060;
     border-radius: 5px;
+}
+
+.collapse__bar--apartPage {
+    width: 550px;
 }
 
 .collapse__button {
@@ -51,4 +56,15 @@
     font-style: normal;
     font-size: 18px;
     font-weight: lighter;
+    line-height: 142.6%; 
+}
+
+.collapse__description--apartPage {
+    width: 550px;
+    min-height: 130px;
+    max-height: fit-content;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 5%;
+    list-style-type: none;
 }

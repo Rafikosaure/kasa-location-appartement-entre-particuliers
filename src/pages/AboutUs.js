@@ -1,7 +1,7 @@
 import '../styles/AboutUs.scss'
 import Landscape from "../components/Landscape";
 import Collapse from '../components/Collapse';
-import PrinciplesDatas from '../datas/valeurs.json'
+import Datas from '../datas/valeurs.json'
 
 function AboutUs() {
     return (
@@ -10,8 +10,8 @@ function AboutUs() {
           <Landscape />
         </div>
         <div className='aboutus__collapses'>
-            {PrinciplesDatas.map((principleData, index) => (
-                <Collapse key={`${principleData}-${index}`} principleData={principleData} index={index} />
+            {Datas.map((data, index) => (
+                <Collapse key={`${data}-${index}`} title={data.title} description={data.description} index={index} />
             ))}
         </div>
       </div>
