@@ -3,11 +3,11 @@ import StarActive from '../assets/star-active.svg'
 import StarInactive from '../assets/star-inactive.svg'
 
 
-function Rating({rating}) {
+function Rating({ rating }) {
     const denominator = 5
-    const yellowStars = new Array(parseInt(rating)).fill(true)
+    const orangeStars = new Array(parseInt(rating)).fill(true)
     const greyStars = new Array(denominator - parseInt(rating)).fill(false)
-    const totalStars = yellowStars.concat(greyStars)    
+    const totalStars = orangeStars.concat(greyStars)    
     
     return (
         <div className='stars'>
