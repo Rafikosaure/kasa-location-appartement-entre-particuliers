@@ -10,11 +10,10 @@
 }
 
 .apartment__datas {
-    background-color: aquamarine;
-    height: 100%;
+    height: fit-content;
     width: 1240px;
-    padding-top: 26px;
-    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 35px;
 }
 
 .apartment__datas--orientation {
@@ -24,29 +23,32 @@
     // align-items: flex-start;
     width: 100%;
     height: 100%;
-    background-color: aqua;
 }
 
 .apartment__title {
     color: #FF6060;
     margin-top: 0;
-    background-color: cadetblue;
+    font-size: 36px;
+    font-weight: 500;
 }
 
-.apartment__description {
+.apartment__location {
     color: #FF6060;
-    background-color: yellowgreen;
+    position: relative;
+    bottom: 14px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .apartment__Tagnames {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin-top: 25px;
+    position: relative;
+    bottom: 14px;
 }
 
 .apartment__host {
-    background-color: bisque;
     width: 200px;
     height: 64px;
     // padding-top: 15px;
@@ -54,30 +56,30 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .apartment__hostName {
     color: #FF6060;
     width: 93px;
     height: fit-content;
-    background-color: violet;
     padding-right: 6%;
     display: flex;
     text-align: right;
+    line-height: 142.6%; 
 }
 
 .apartment__hostPhoto {
     width: 64px;
     height: 64px;
     border-radius: 50%;
-    background-color: grey;
 }
 
 .apartment__collapseComponents {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 5px;
-    // background-color: cadetblue;
+    position: relative;
+    bottom: 16px;
     min-height: fit-content;
 }

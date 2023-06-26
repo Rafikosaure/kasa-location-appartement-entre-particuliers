@@ -7,15 +7,11 @@ import { useEffect } from "react"
 import { useState } from "react"
 import { Navigate } from "react-router-dom"
 import Collapse from "../components/Collapse"
+import Rating from "../components/Rating"
 
 function Apartment() {
   const { apartmentId } = useParams()
   let currentDatas = Datas.find(apartment => apartment.id === apartmentId)
-  // let currentEquipments = currentDatas.equipments
-  // currentEquipments.forEach(function(item) {
-  //   console.log(item);
-  // });
-
 
   // Ici commence la redirection si url incorrecte
   const [ redirectTo, setRedirectTo] = useState(false)
@@ -37,20 +33,20 @@ function Apartment() {
         <div className="apartment__datas">
           <div className="apartment__datas--orientation">
             <div>
-              <h1 className="apartment__title">Couroucoucou Steuch Steuch</h1>
-              <p className="apartment__description">Apart de misère, passez votre chemin !</p>
+              <h1 className="apartment__title">{currentDatas.title}</h1>
+              <p className="apartment__location">{currentDatas.location}</p>
               <div className="apartment__Tagnames">
-                <TagName />
-                <TagName />
-                <TagName />
+              {currentDatas.tags.map((tag, index) => (
+                <TagName key={`${tag}-${index}`} tagText={tag} />
+              ))}
               </div>
             </div>
             <div>
               <div className="apartment__host">
-                <p className="apartment__hostName">Nom de l'hôte</p>
-                <img className="apartment__hostPhoto" src="" alt="" />
+                <p className="apartment__hostName">{currentDatas.host.name}</p>
+                <img className="apartment__hostPhoto" src={currentDatas.host.picture} alt="Hôte de l'appartement" />
               </div>
-              <span>Stars</span>
+              <Rating rating={currentDatas.rating} />
             </div>
           </div>
           <div className="apartment__collapseComponents">
