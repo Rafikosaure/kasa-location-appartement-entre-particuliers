@@ -8,8 +8,8 @@ function Header() {
             <div className='banner'>
                 <img src={logo} alt='Logo de Kasa' className='banner__logo' />
                 <nav className='banner__navigation'>
-                    <NavLink to="/" className={({isActive}) => isActive ? 'banner__navlink' && 'banner__navlink--underline' : 'banner__navlink'}>Accueil</NavLink>
-                    <NavLink to="/aboutus" className={({isActive}) => isActive ? 'banner__navlink' && 'banner__navlink--underline' : 'banner__navlink'} >A Propos</NavLink>
+                    <NavLink to="/" className={({isActive}) => isActive ? 'banner__navlink--underline' : 'banner__navlink'}>Accueil</NavLink>
+                    <NavLink to="/aboutus" className={({isActive}) => isActive ? 'banner__navlink--underline' : 'banner__navlink'} >A Propos</NavLink>
                 </nav>
             </div>
         </div>
