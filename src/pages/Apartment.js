@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom"
 import '../styles/Apartment.scss'
 import Slideshow from "../components/Slideshow"
-import Datas from '../datas/logements.json'
+import { datas } from "../datas/Services"
 import TagName from "../components/TagName"
 import { useEffect } from "react"
 import { useState } from "react"
@@ -12,7 +12,7 @@ function Apartment() {
   const { apartmentId } = useParams()
   const navigate = useNavigate()
   const [rightPage, updateRightPage] = useState(false)
-  const currentDatas = Datas.find(apartment => apartment.id === apartmentId)
+  const currentDatas = datas.find(apartment => apartment.id === apartmentId)
   
   useEffect(() => {
     if (apartmentId === undefined || currentDatas === undefined) {

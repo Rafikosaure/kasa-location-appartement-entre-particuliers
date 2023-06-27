@@ -1,4 +1,4 @@
-import Datas from '../datas/logements.json'
+import { datas } from '../datas/Services'
 import '../styles/CardsList.scss'
 import Card from './Card'
 
@@ -6,7 +6,7 @@ import Card from './Card'
 function CardsList() {
     return (
         <div className='cardslist'>
-            {Datas.map(apartment => (
+            {datas.map(apartment => (
                 <Card key={`${apartment.id}`} apartment={apartment} />
             ))}            
         </div>
