@@ -13,7 +13,6 @@ function Apartment() {
   const navigate = useNavigate()
   const [rightPage, updateRightPage] = useState(false)
   const currentDatas = Datas.find(apartment => apartment.id === apartmentId)
-  console.log(currentDatas)
   
   useEffect(() => {
     if (apartmentId === undefined || currentDatas === undefined) {
@@ -53,8 +52,7 @@ function Apartment() {
             </div>
           </div>
         </div>
-      ) : (null)
-      }
+      ) : (null)}
     </div>
   )
 }
