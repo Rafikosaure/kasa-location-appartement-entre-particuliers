@@ -26,12 +26,15 @@ $background-color_1: #F6F6F6;
         height: 14px;
         border: none;
         cursor: pointer;
+        background: url(../assets/arrow_up.png);        
     }
     .collapse__button--close {
-        background: url(../assets/arrow_down.png);
+        transform: rotate(-180deg);
+        transition: transform 250ms ease-in-out;
     }
     .collapse__button--open {
-        background: url(../assets/arrow_up.png);
+        transform: rotate(0deg);
+        transition: transform 250ms ease-in-out;
     }
     .collapse__title {
         font-family: $font-family_1;
