@@ -2,24 +2,37 @@ $color_1: #FF6060;
 $color_2: white;
 $font-family_1: 'Montserrat';
 $background-color_1: #F6F6F6;
+$height_1: 52px;
 
 .collapse {
-	background-color: $background-color_1;
-	color: $color_1;
-	height: 100%;
+    margin-top: 30px;
+    background-color: $background-color_1;
     border-radius: 10px;
+    color: $color_1;
+    max-height: $height_1
+}
+.collapse--open {
+    transition: max-height ease-in-out 300ms;
+    max-height: 300px;
+    height: fit-content;
+    overflow: clip;
+}
+.collapse--close {
+    transition: max-height ease-in-out 300ms;
+    color: transparent;
+    max-height: $height_1
 }
 .collapse__bar {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px 10px 15px;
-    margin-top: 30px;
     width: 1015px;
     height: 32px;
-    background: #FF6060;
-    border-radius: 5px;
+    background: $color_1;
+    border-radius: 10px;
     .collapse__button {
         display: flex;
         width: 24px;
@@ -28,11 +41,11 @@ $background-color_1: #F6F6F6;
         cursor: pointer;
         background: url(../assets/arrow_up.png);        
     }
-    .collapse__button--close {
+    .collapse__button--open {
         transform: rotate(-180deg);
         transition: transform 250ms ease-in-out;
     }
-    .collapse__button--open {
+    .collapse__button--close {
         transform: rotate(0deg);
         transition: transform 250ms ease-in-out;
     }
@@ -49,8 +62,9 @@ $background-color_1: #F6F6F6;
     border-radius: 10px;
 }
 .collapse__description {
+    border-radius: 10px;
     width: 1015px;
-    height: fit-content;
+    max-height: 100%;
     margin: auto;
     padding-left: 0;
     padding-top: 15px;
@@ -62,6 +76,7 @@ $background-color_1: #F6F6F6;
     line-height: 142.6%;
 }
 .collapse__description--apartPage {
+    border-radius: 10px;
     width: 550px;
     min-height: 150px;
     max-height: fit-content;

@@ -41,12 +41,37 @@ function Collapse({ title, description }) {
         <div>
             <div>
                 {isOpen ? (
-                    <div className="collapse">
+                    <div className="collapse collapse--open">
+                        <div className={`collapse__bar ${styleCollapseBar}`}>
+                            <h1 className="collapse__title">{title}</h1>
+                            <button
+                                className="collapse__button collapse__button--open"
+                                onClick={() => setIsOpen(false)}
+                            />
+                        </div>
+                        {isAList ? (
+                            <ul
+                                className={`collapse__description collapse__description--open ${styleCollapseDescription}`}
+                            >
+                                {description.map((item, index) => (
+                                    <li key={`${item}-${index}`}>{item}</li>
+                                ))}
+                            </ul>
+                        ) : (
+                            <p
+                                className={`collapse__description collapse__description--open ${styleCollapseDescription}`}
+                            >
+                                {description}
+                            </p>
+                        )}
+                    </div>
+                ) : (
+                    <div className='collapse collapse--close'>
                         <div className={`collapse__bar ${styleCollapseBar}`}>
                             <h1 className="collapse__title">{title}</h1>
                             <button
                                 className="collapse__button collapse__button--close"
-                                onClick={() => setIsOpen(false)}
+                                onClick={() => setIsOpen(true)}
                             />
                         </div>
                         {isAList ? (
@@ -64,16 +89,6 @@ function Collapse({ title, description }) {
                                 {description}
                             </p>
                         )}
-                    </div>
-                ) : (
-                    <div>
-                        <div className={`collapse__bar ${styleCollapseBar}`}>
-                            <h1 className="collapse__title">{title}</h1>
-                            <button
-                                className="collapse__button collapse__button--open"
-                                onClick={() => setIsOpen(true)}
-                            />
-                        </div>
                     </div>
                 )}
             </div>
