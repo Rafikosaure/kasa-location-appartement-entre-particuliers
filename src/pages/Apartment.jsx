@@ -36,7 +36,7 @@ function Apartment() {
                                 <p className="apartment__location">
                                     {currentDatas.location}
                                 </p>
-                                <div className="apartment__Tagnames">
+                                <div className="apartment__tagnames">
                                     {currentDatas.tags.map((tag, index) => (
                                         <TagName
                                             key={`${tag}-${index}`}
