@@ -2,37 +2,62 @@ $color_1: #FF6060;
 $background-color_1: white;
 @mixin links-properties {
     color: $color_1;
-    font-size: 24px;
     font-weight: 500;
     text-align: right;
 }
 
 .header {
-	max-width: 1440px;
+    // max-width: 1440px;
 	background-color: $background-color_1;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    @media (min-width: 768px) {
+        height: auto;
+    }
     .banner {
-        width: 1240px;
-        height: 68px;
-        margin-right: auto;
-        margin-left: auto;
+        width: 86%;
+        min-width: 335px;
+        height: fit-content;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
-        padding-top: 45px;
-        padding-bottom: 50px;
+        padding-top: 0;
+        padding-bottom: 0;
         background-color: $background-color_1;
+        @media (min-width: 768px) {
+            padding-top: 45px;
+            padding-bottom: 50px;
+            height: 68px;
+        }
         .banner__logo {
-            height: auto;
-            width: auto;
+            height: 47px;
+            max-width: 145px;
+            @media (min-width: 768px) {
+                max-width: 100%;
+                height: auto;
+            }
         }
         .banner__navigation {
             display: flex;
             flex-direction: row;
-            width: fit-content;
-            height: 34px;
+            align-items: center;
+            height: 47px;
+            white-space: nowrap;
             padding: 0px;
-            gap: 57px;
+            gap: 10px;
+            text-transform: uppercase;
+            font-size: 12px;
+            @media (min-width: 768px) {
+                text-transform: none;
+                white-space: normal;
+                font-size: 24px;
+                gap: 57px;
+                height: auto;
+            }
             .banner__navlink {
                 @include links-properties;
                 text-decoration: none;
@@ -45,6 +70,62 @@ $background-color_1: white;
     }
 }
 
-
-
-
+// .header {
+//     // max-width: 1440px;
+// 	background-color: $background-color_1;
+//     max-width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//         @media (max-width: 996px) {
+//             height: 70px;
+//         }
+//     .banner {
+//         width: 86%;
+//         height: 68px;
+//         display: flex;
+//         justify-content: space-between;
+//         flex-direction: row;
+//         align-items: center;
+//         padding-top: 45px;
+//         padding-bottom: 50px;
+//         background-color: $background-color_1;
+//         @media (max-width: 996px) {
+//             padding-top: 0;
+//             padding-bottom: 0;
+//             height: fit-content;
+//         }
+//         .banner__logo {
+//             height: auto;
+//             max-width: auto;
+//             @media (max-width: 996px) {
+//                 max-width: 145px;
+//                 height: 47px;
+//             }
+//         }
+//         .banner__navigation {
+//             display: flex;
+//             flex-direction: row;
+//             height: auto;
+//             padding: 0px;
+//             gap: 57px;
+//             font-size: 24px;
+//             @media (max-width: 996px) {
+//                 white-space: nowrap;
+//                 align-items: center;
+//                 font-size: 12px;
+//                 gap: 10px;
+//                 height: 47px;
+//                 text-transform: uppercase;
+//             }
+//             .banner__navlink {
+//                 @include links-properties;
+//                 text-decoration: none;
+//             }
+//             .banner__navlink--underline {
+//                 @include links-properties;
+//                 text-decoration: underline;
+//             }
+//         }
+//     }
+// }
