@@ -6,7 +6,7 @@ import { guidelines } from '../datas/Services'
 function AboutUs() {
     return (
         <div className="aboutus">
-            <div className="aboutus__body">
+            <div className="aboutus__landscape">
                 <Landscape />
             </div>
             <div className="aboutus__collapses">
