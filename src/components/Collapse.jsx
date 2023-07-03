@@ -10,6 +10,9 @@ function Collapse({ title, description }) {
     const [isAList, setIsAList] = useState(false)
 
     // Classes CSS en fonction de la page courante
+    const [styleCollapse, setStyleCollapse] = useState(
+        'collapse--apartPage'
+    )
     const [styleCollapseBar, setStyleCollapseBar] = useState(
         'collapse__bar--apartPage'
     )
@@ -22,6 +25,7 @@ function Collapse({ title, description }) {
     // Gestion des styles du composant selon la page
     useEffect(() => {
         if (aboutusPage) {
+            setStyleCollapse('')
             setStyleCollapseBar('')
             setStyleCollapseDescription('')
         }
@@ -41,7 +45,7 @@ function Collapse({ title, description }) {
         <div>
             <div>
                 {isOpen ? (
-                    <div className="collapse collapse--open">
+                    <div className={`collapse collapse--open ${styleCollapse}`}>
                         <div className={`collapse__bar ${styleCollapseBar}`}>
                             <h1 className="collapse__title">{title}</h1>
                             <button
@@ -66,7 +70,7 @@ function Collapse({ title, description }) {
                         )}
                     </div>
                 ) : (
-                    <div className='collapse collapse--close'>
+                    <div className={`collapse collapse--close ${styleCollapse}`}>
                         <div className={`collapse__bar ${styleCollapseBar}`}>
                             <h1 className="collapse__title">{title}</h1>
                             <button
