@@ -29,7 +29,7 @@ function Apartment() {
                     <Slideshow currentDatas={currentDatas} />
                     <div className="apartment__datas">
                         <div className="apartment__datas--orientation">
-                            <div>
+                            <div className="apartment__presentation">
                                 <h1 className="apartment__title">
                                     {currentDatas.title}
                                 </h1>
@@ -45,7 +45,7 @@ function Apartment() {
                                     ))}
                                 </div>
                             </div>
-                            <div>
+                            <div className='apartment__hostAndRating'>
                                 <div className="apartment__host">
                                     <p className="apartment__hostName">
                                         {currentDatas.host.name}
@@ -56,18 +56,24 @@ function Apartment() {
                                         alt="Hôte de l'appartement"
                                     />
                                 </div>
-                                <Rating rating={currentDatas.rating} />
+                                <div className='apartment__rating'>
+                                    <Rating rating={currentDatas.rating} />
+                                </div>
                             </div>
                         </div>
                         <div className="apartment__collapseComponents">
-                            <Collapse
+                            <div className="apartment__collapse">
+                                <Collapse
                                 title="Description"
-                                description={currentDatas.description}
-                            />
-                            <Collapse
-                                title="Equipements"
-                                description={currentDatas.equipments}
-                            />
+                                description={currentDatas.description}             
+                                />
+                            </div>
+                            <div className="apartment__collapse">
+                                <Collapse
+                                    title="Equipements"
+                                    description={currentDatas.equipments}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
