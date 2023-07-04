@@ -6,7 +6,7 @@ $background-color_1: white;
 	flex-direction: column;
 	background-color: $background-color_1;
 	width: 100%;
-	height: fit-content;
+	height: auto;
 	margin-right: auto;
 	margin-left: auto;
     .aboutus__landscape {
@@ -21,8 +21,7 @@ $background-color_1: white;
         height: fit-content;
         display: flex;
         flex-direction: column;
-        // background-color: $background-color_1;
-        background-color: burlywood;
+        background-color: $background-color_1;
         margin-top: 0;
         margin-bottom: 20px;
         @media (min-width: 768px) {
