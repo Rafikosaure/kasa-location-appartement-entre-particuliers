@@ -63,6 +63,10 @@ $font-family_1: Montserrat;
             font-size: 18px;
             font-family: $font-family_1;
             font-weight: 500;
+            display: none;
+            @media (min-width: 768px) {
+                display: block;
+            }
         }
     }
 }
