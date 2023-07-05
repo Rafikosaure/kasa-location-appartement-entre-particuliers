@@ -3,7 +3,9 @@ $background-color_1: white;
 
 .apartment {
 	// width: 1440px;
-    width: 100%;
+    // width: 100%;
+    width: 100vw;
+    max-width: 1440px;
 	height: fit-content;
 	background-color: $background-color_1;
 	display: flex;
