@@ -70,8 +70,8 @@ function Apartment() {
                             </div>
                             <div className="apartment__collapse">
                                 <Collapse
-                                    title="Equipements"
-                                    description={currentDatas.equipments}
+                                title="Equipements"
+                                description={currentDatas.equipments}
                                 />
                             </div>
                         </div>
