@@ -2,7 +2,6 @@ import '../styles/Landscape.scss'
 import LandscapeHome from '../assets/landscape-home.jpg'
 import LandscapeAboutUs from '../assets/landscape-aboutus.jpg'
 import { useState } from 'react'
-// import { useRef } from 'react'
 import { useEffect } from 'react'
 
 function Landscape() {
