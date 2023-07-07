@@ -1,4 +1,3 @@
-// import Datas from '../datas/logements.json'
 import '../styles/TagName.scss'
 
 function TagName({ tagText }) {
