@@ -9,7 +9,7 @@ function Header() {
                 <img src={logo} alt="Logo de Kasa" className="banner__logo" />
                 <nav className="banner__navigation">
                     <NavLink
-                        to="/home"
+                        to="/"
                         className={({ isActive }) =>
                             isActive
                                 ? 'banner__navlink--underline'
