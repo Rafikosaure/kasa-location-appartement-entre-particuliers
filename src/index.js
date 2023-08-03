@@ -15,9 +15,9 @@ root.render(
         <Router>
             <Header />
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/apartment/:apartmentId" element={<Apartment />} />
-                    <Route path="/aboutus" element={<AboutUs />} />
+                    <Route path="/kasa-location-appartement-entre-particuliers" element={<Home />} />
+                    <Route path="/kasa-location-appartement-entre-particuliers/apartment/:apartmentId" element={<Apartment />} />
+                    <Route path="/kasa-location-appartement-entre-particuliers/aboutus" element={<AboutUs />} />
                     <Route path="*" element={<Error />} />
                 </Routes>
             <Footer />
