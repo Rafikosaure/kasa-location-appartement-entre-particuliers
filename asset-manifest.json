@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/kasa-location-appartement-entre-particuliers/static/css/main.bf246775.css",
+    "main.js": "/kasa-location-appartement-entre-particuliers/static/js/main.07b6d9c4.js",
+    "static/media/landscape-aboutus.jpg": "/kasa-location-appartement-entre-particuliers/static/media/landscape-aboutus.be33cd35fc995b84e18a.jpg",
+    "static/media/landscape-home.jpg": "/kasa-location-appartement-entre-particuliers/static/media/landscape-home.e181dbc58084d2c509ac.jpg",
+    "static/media/RectangleCard.png": "/kasa-location-appartement-entre-particuliers/static/media/RectangleCard.54f1d3a8d85455993972.png",
+    "index.html": "/kasa-location-appartement-entre-particuliers/index.html",
+    "static/media/star-inactive.svg": "/kasa-location-appartement-entre-particuliers/static/media/star-inactive.b6367bea6c457f8afe6f3e40a5086aee.svg",
+    "static/media/star-active.svg": "/kasa-location-appartement-entre-particuliers/static/media/star-active.e34402d15fe79da5926ce34f7adc8d53.svg",
+    "static/media/arrow_right.svg": "/kasa-location-appartement-entre-particuliers/static/media/arrow_right.dfebbffec6d3865e8655.svg",
+    "static/media/arrow_left.svg": "/kasa-location-appartement-entre-particuliers/static/media/arrow_left.f3f0bb2c041648c34b95.svg",
+    "main.bf246775.css.map": "/kasa-location-appartement-entre-particuliers/static/css/main.bf246775.css.map",
+    "main.07b6d9c4.js.map": "/kasa-location-appartement-entre-particuliers/static/js/main.07b6d9c4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf246775.css",
+    "static/js/main.07b6d9c4.js"
+  ]
+}
