@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Kasa - Application de location immobilière  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Kasa est une application web développée en **React** et **SASS**, dans le cadre d'un projet de formation chez OpenClassrooms. Il s'agit d'une refonte complète du site de Kasa, leader en location immobilière pour particuliers en France.  
 
-## Available Scripts
+🚀 **Déployé sur Vercel** : [Accéder à l'application](https://kasa-blue.vercel.app/)  
 
-In the project directory, you can run:
+## 🛠️ Technologies utilisées  
 
-### `npm start`
+- **React** (avec React Router)  
+- **SASS** pour le stylisme  
+- **Méthodologie Mobile First** pour un design entièrement responsive  
+- **Données stockées en local** (pas de backend ni d'API externe)  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🎨 Fonctionnalités  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Page d’accueil** : Affiche la liste des logements disponibles avec leur nom et leur photographie.  
+- **Page logement** :  
+  - Nom du logement et localisation précise  
+  - Tags informatifs  
+  - Nom et image de profil du ou de la locataire  
+  - Qualité du logement en notation sur 5 étoiles  
+  - Description détaillée et liste des équipements (via menus déroulants)  
+  - Carrousel d'images pour visualiser les photos du logement  
+- **Page "À propos"** : Présente les valeurs de Kasa sous forme de menus déroulants.  
+- **Navigation** : Barre de navigation pour explorer le site.  
+- **Footer** : Contient quelques informations sur l'entreprise Kasa.  
+- **Page 404** : Gère les erreurs d'URL incorrectes avec un affichage dédié.  
+- **Design Responsive** : Adapté aux écrans mobiles, tablettes et ordinateurs.  
 
-### `npm test`
+## 🚀 Installation et exécution  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📋 Prérequis  
+- **Node.js** v20.11.0  
+- **npm** installé  
 
-### `npm run build`
+### 🔧 Étapes d’installation  
+```bash
+# 1. Cloner le dépôt
+git clone https://github.com/ton-repo/kasa.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 2. Se rendre dans le dossier du projet
+cd kasa
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 3. Installer les dépendances
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 4. Lancer l’application en local
+npm start
+```
 
-### `npm run eject`
+L'application sera disponible à l'adresse **http://localhost:3000/**.  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ✅ Tests et validation  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Aucun test Jest ou Cypress n'a été mis en place. Cependant, le projet a été soumis à une batterie de tests unitaires manuels lors de la soutenance devant un jury pour vérifier le bon fonctionnement des composants et des fonctionnalités principales.  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🌍 Déploiement  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+L’application est déployée sur **Vercel** et accessible ici : [https://kasa-blue.vercel.app/](https://kasa-blue.vercel.app/)  
 
-## Learn More
+## 📜 Licence  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ce projet a été réalisé dans le cadre d’une mise en situation fictive pour OpenClassrooms et n’a pas vocation à être utilisé commercialement.  
